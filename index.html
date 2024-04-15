@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="src/output.css" rel="stylesheet"/>
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+    }
+    </script>
 </head>
 <body>
 
@@ -539,6 +546,6 @@ rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
 
 <!-- Back to top End -->
 
-    <script src="dist/script.js"></script>
+    <script src="dist/script.js"></scrip>
 </body>
 </html>
